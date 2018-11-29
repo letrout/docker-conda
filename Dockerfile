@@ -2,11 +2,6 @@ FROM ubuntu:18.10
 LABEL maintainer="Joel Luth (joelluth@gmail.com)"
 LABEL description="basic miniconda image"
 
-#  $ docker build . -t continuumio/miniconda3:latest -t continuumio/miniconda3:4.5.4
-#  $ docker run --rm -it continuumio/miniconda3:latest /bin/bash
-#  $ docker push continuumio/miniconda3:latest
-#  $ docker push continuumio/miniconda3:4.5.4
-
 ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
 ENV PATH /opt/conda/bin:$PATH
 ENV CONDA_VER 4.5.11
